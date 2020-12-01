@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36E3F2202576993E00068EEC /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3F21F2576993E00068EEC /* SigninViewController.swift */; };
+		36E3F2272576AA2300068EEC /* SignupMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E3F2262576AA2300068EEC /* SignupMainViewController.swift */; };
 		4164DE3F2575FC9900BA6771 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164DE3E2575FC9900BA6771 /* UserInformation.swift */; };
 		C7352B87256F59BD00C3B7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7352B86256F59BD00C3B7F1 /* AppDelegate.swift */; };
 		C7352B89256F59BD00C3B7F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7352B88256F59BD00C3B7F1 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		36E3F21F2576993E00068EEC /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		36E3F2262576AA2300068EEC /* SignupMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMainViewController.swift; sourceTree = "<group>"; };
 		4164DE3E2575FC9900BA6771 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		C7352B83256F59BD00C3B7F1 /* SignUpFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7352B86256F59BD00C3B7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				36E3F21F2576993E00068EEC /* SigninViewController.swift */,
 				C7352B91256F59BF00C3B7F1 /* LaunchScreen.storyboard */,
 				C7352B94256F59BF00C3B7F1 /* Info.plist */,
+				36E3F2262576AA2300068EEC /* SignupMainViewController.swift */,
 			);
 			path = SignUpFlow;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E3F2272576AA2300068EEC /* SignupMainViewController.swift in Sources */,
 				36E3F2202576993E00068EEC /* SigninViewController.swift in Sources */,
 				4164DE3F2575FC9900BA6771 /* UserInformation.swift in Sources */,
 				C7352B87256F59BD00C3B7F1 /* AppDelegate.swift in Sources */,
