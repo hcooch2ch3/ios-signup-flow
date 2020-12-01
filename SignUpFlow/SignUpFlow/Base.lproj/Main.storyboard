@@ -106,6 +106,9 @@
                                 <state key="normal" title="취소">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpCancelButton:" destination="h2H-pK-OWC" eventType="touchUpInside" id="CdP-Hh-2FF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRc-XZ-CVd">
                                 <rect key="frame" x="319" y="745" width="30" height="30"/>

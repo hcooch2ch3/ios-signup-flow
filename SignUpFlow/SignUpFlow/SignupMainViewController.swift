@@ -27,6 +27,10 @@ class SignupMainViewController: UIViewController {
         self.present(imagePicker, animated: true, completion: nil)
     }
 
+    @IBAction func touchUpCancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension SignupMainViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
