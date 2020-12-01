@@ -10,6 +10,11 @@ import UIKit
 class SignupMainViewController: UIViewController {
 
     @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var checkPasswordTextField: UITextField!
+    @IBOutlet weak var introductionTextView: UITextView!
+    @IBOutlet weak var nextButton: UIButton!
     
     private let imagePicker = UIImagePickerController()
     
@@ -21,6 +26,11 @@ class SignupMainViewController: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(presentImagePicker))
         userImageView.addGestureRecognizer(tap)
+        
+        self.idTextField.delegate = self
+        self.passwordTextField.delegate = self
+        self.checkPasswordTextField.delegate = self
+        self.introductionTextView.delegate = self
     }
     
     @objc func presentImagePicker() {
@@ -29,6 +39,19 @@ class SignupMainViewController: UIViewController {
 
     @IBAction func touchUpCancelButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    /// Image, ID, Password, Password Check가 모두 작성되어있으면 다음 버튼을 활성화하고 아니면 비활성화하는 함수
+    func toggleNextButton() {
+        if userImageView.image != nil
+        && passwordTextField.hasText
+        && checkPasswordTextField.hasText
+        && passwordTextField.text == checkPasswordTextField.text
+        && introductionTextView.hasText {
+            nextButton.isEnabled = true
+        } else {
+            nextButton.isEnabled = false
+        }
     }
     
 }
@@ -44,6 +67,24 @@ extension SignupMainViewController: UIImagePickerControllerDelegate, UINavigatio
         userImageView.image = image
         
         dismiss(animated: true, completion: nil)
+        
+        toggleNextButton()
+    }
+    
+}
+
+extension SignupMainViewController: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        toggleNextButton()
+    }
+    
+}
+
+extension SignupMainViewController: UITextViewDelegate {
+    
+    func textViewDidChange(_ textView: UITextView) {
+        toggleNextButton()
     }
     
 }

@@ -120,6 +120,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="checkPasswordTextField" destination="ng8-Ke-bGO" id="LFI-OI-6sW"/>
+                        <outlet property="idTextField" destination="1lE-ta-mEW" id="Iet-NW-MIe"/>
+                        <outlet property="introductionTextView" destination="7dt-1c-ha3" id="oVp-ZE-zoO"/>
+                        <outlet property="nextButton" destination="PRc-XZ-CVd" id="AwT-pz-Gfu"/>
+                        <outlet property="passwordTextField" destination="xDR-WU-MKc" id="kbe-zs-9Oy"/>
                         <outlet property="userImageView" destination="7JT-iN-yHG" id="YX2-SR-HPm"/>
                     </connections>
                 </viewController>
