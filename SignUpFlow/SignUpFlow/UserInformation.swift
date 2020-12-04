@@ -41,4 +41,13 @@ final class UserInformation {
     func setBirthday(_ birthday: Date) {
         user.birthday = birthday
     }
+    
+    func reset() {
+        user.id = nil
+        user.password = nil
+        user.image = nil
+        user.introduction = nil
+        user.phoneNumber = nil
+        user.birthday = nil
+    }
 }
